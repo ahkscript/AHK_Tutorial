@@ -878,6 +878,8 @@ Variable4.=Variable                ; Append a variable to the end of another var
 Variable5+=VariableNumber          ; Add the value of a variable to another variable using expressional assignment.
 Variable5-=VariableNumber          ; Subtract the value of a variable from another variable using expressional assignment.
 Variable6:=SubStr(Variable, 2, 2)  ; Variable inside a function. This is always an expression.
+Variable7=%Variable% Text          ; Assigns a variable to another variable with some extra text using tradition assignment.
+Variable8:=Variable " Text"        ; Assigns a variable to another variable with some extra text using expressional assignment.
 MsgBox, %Variable%                 ; Variable inside a command. 
 StringSplit, Variable, Variable, x ; Variable inside a command that uses InputVar and OutputVar.
 if (VariableNumber=6)              ; Whenever an IF has parenthesis, it'll be an expression. So no %'s.
