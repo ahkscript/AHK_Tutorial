@@ -40,23 +40,27 @@
 							<li><a href="#s51" class="toci">Code blocks</a></li>
 						</ol>
 					</li>
-					<li>
-						<a href="#s6" class="toci">Variables</a>
+					<li><a href="#s6" class="toci">Variables</a>
 						<ol>
 							<li><a href="#s61" class="toci">When to use percents</a></li>
 							<li><a href="#s62" class="toci">Getting user input</a></li>
 							<li><a href="#s63" class="toci">Other Examples?</a></li>
 						</ol>
 					</li>
-					<li>
-						<a href="#s7" class="toci">Other helpful goodies</a>
+					<li><a href="#s7" class="toci">Objects</a>
 						<ol>
-							<li><a href="#s71" class="toci">The mysterious []'s</a></li>
-							<li><a href="#s72" class="toci">Finding your AHK version</a></li>
-							<li><a href="#s73" class="toci">Trial and Error</a></li>
-							<li><a href="#s74" class="toci">Indentation</a></li>
-							<li><a href="#s75" class="toci">Asking for Help</a></li>
-							<li><a href="#s76" class="toci">Other links</a></li>
+							<li><a href="#s71" class="toci">Creating Objects</a></li>
+							<li><a href="#s72" class="toci">Using Objects</a></li>
+						</ol>
+					</li>
+					<li><a href="#s8" class="toci">Other helpful goodies</a>
+						<ol>
+							<li><a href="#s81" class="toci">The mysterious []'s</a></li>
+							<li><a href="#s82" class="toci">Finding your AHK version</a></li>
+							<li><a href="#s83" class="toci">Trial and Error</a></li>
+							<li><a href="#s84" class="toci">Indentation</a></li>
+							<li><a href="#s85" class="toci">Asking for Help</a></li>
+							<li><a href="#s86" class="toci">Other links</a></li>
 						</ol>
 					</li>
 				</ol>
@@ -158,7 +162,7 @@ Return
 						<li>8. Save the File.</li>
 						<li>9. Double-Click the file/icon in the desktop to run it. Open notepad or (anything you can type in) and press <span class="key">Ctrl</span> and <span class="key">J</span>.</li>
 						<li>10. Hip Hip Hooray! Your first script is done. Go get some reward snacks then return to reading the rest of this tutorial.</li>
-				   </ul>
+					</ul>
 
 					<p class="Note">
 						Video instructions:<br />
@@ -195,13 +199,14 @@ Return
 							<li>Look for <b>AutoHotkey.chm</b> or a file that says AutoHotkey and has a yellow question mark on it.</li>
 							<li>Done!</li>
 						</ol>
-				   <p class="Note">
+					</div>
+					<p class="Note">
 						Online Links:<br />
 						<a href="http://www.autohotkey.com/docs/" class="url">Documentation</a><br />
 						<a href="http://www.autohotkey.com/docs/commands.htm" class="url">Command List</a><br />
 						<a href="http://www.autohotkey.com/docs/Functions.htm#BuiltIn" class="url">Functions</a><br />
-						<a href="http://www.autohotkey.com/docs/Variables.htm" class="url">Variables</a></p>
-					</div>
+						<a href="http://www.autohotkey.com/docs/Variables.htm" class="url">Variables</a>
+					</p>
 				</div>
 				<div id="hotkeys_and_hotstrings" class="section">
 					<h1>2 - <a id="s2" href="#s2">Hotkeys & Hotstrings</a></h1>
@@ -340,7 +345,7 @@ Return
 					</p>
 					<p>
 						You can define a custom combination of two (and only two) 
-						keys (except joystick buttons) by using <b>&</b> between
+						keys (except joystick buttons) by using <b>&amp;</b> between
 						them. In the below example, you would hold down 
 						<span class="key">Numpad0</span> then press the second 
 						key to trigger the hotkey:
@@ -471,6 +476,7 @@ Return                                     ; This ends the hotkey. The code belo
 					<!-- PAGE 2 -->
 					<!-- PAGE 2 -->
 					<!-- PAGE 2 -->
+				</div>
 				</div>
 				<div id="sending_keystrokes" class="section">
 					<h1>3 - <a id="s3" href="#s3">Sending key strokes</a></h1>
@@ -791,19 +797,19 @@ MsgBox, We are now 'outside' the if. We did not need {}'s since there was only 1
 					<div>
 						Variables can be assigned a few ways, We'll cover the most common forms. Please pay attention to the equal sign (=).
 						<ol>
-							<li class="hover">variable=text<br />
+							<li><span class="InlineCode">variable=text</span><br />
 								<div class="indented">This is the simplest form for a variable, traditional assignment. Simply type in your text and done.</div>
 							</li>
-							<li class="hover">variable=%variable2%<br />
+							<li><span class="InlineCode">variable=%variable2%</span><br />
 								<div class="indented">Same as above, but you are assigning a variable to a different variables value.</div>
 							</li>
-							<li class="hover">variable:="text"<br />
+							<li><span class="InlineCode">variable:="text"</span><br />
 								<div class="indented">This is an expression assignment, due to the : before the =. Any text needs to be in "quotes".</div>
 							</li>
-							<li class="hover">variable:=variable2<br />
+							<li><span class="InlineCode">variable:=variable2</span><br />
 								<div class="indented">In expression mode, variables do not need %'s.</div>
 							</li>
-							<li class="hover">variable:=6+8/3*2-sqrt(9)<br />
+							<li><span class="InlineCode">variable:=6+8/3*2-sqrt(9)</span><br />
 								<div class="indented">Thanks to expressions, you can do math!</div>
 							</li>
 						</ol>
@@ -888,17 +894,190 @@ if VariableNumber=6                ; Without parenthesis, the if is Traditional.
 If Var1 &lt; %Var2%                   ; Without parenthesis, the if is Traditional. However, only variables on the 'right side' need %'s. 
 </pre>
 					</div>
-					<!-- PAGE 6 -->
-					<!-- PAGE 6 -->
-					<!-- PAGE 6 -->
+				<!-- PAGE 6 -->
+				<!-- PAGE 6 -->
+				<!-- PAGE 6 -->
+				</div>
+				<div id="objects" class="section">
+					<h1>7 - <a id="s7" href="#s7">Objects</a></h1>
+					<p>
+						<a href="http://a.hk.am/" class="url">Objects</a> are a way of organizing your data for more efficient usage. Sometimes objects are referred to as arrays, but it's important to note that all arrays are just objects. We call objects different things depending on what we are using them for, but all objects are the same.
+					</p>
+					<hr />
+					An object is basically a collection of variables.
+					The variable names are known as "Keys", and the contents of the variables are "Values".<br />
+					<br />
+					When you hear people calling an object an <i>array</i> or <i>indexed array</i>, it usually means that all the keys are sequential numbers 1 and up.<br />
+					When you hear people calling an object an <i>associative array</i>, it means that the keys are either strings (text) or non-sequential numbers.
+					Sometimes it's a mix of both, and sequential numbers too!<br />
+					<br />
+					There are no restrictions to what a key or value can be, and they can even be other arrays!
+					<br />
+					When the values are arrays too, this is referred to as a <i>nested array</i>, and these will be explained later.
+					<hr />
+					<div>
+						There are a number of reasons you might want to use an object for something. Some examples:<br />
+						<ol>
+							<li>You want to have a numbered list of things, such as a grocery list (this would be referred to as an indexed array)</li>
+							<li>You want to represent a grid, perhaps for a board game (this would be done with nested objects)</li>
+							<li>You have a list of things where each thing has a name, such as the characteristics of a fruit (this would be referred to as an associative array)</li>
+						</ol>
+					</div>
+					<h2>a. <a id="s71" href="#s71">Creating Objects</a></h2>
+					<div>
+						There are a few ways to create an object, and the most common ones are listed below<br />
+						<ol>
+							<li><span class="InlineCode" >MyObject := ["one", "two", "three", 17]</span><br />
+								<div class="indented" >
+									Bracket syntax.
+									This will start you off with what is sometimes called an "indexed array".
+									An indexed array is an object representing a list of items, numbered 1 and up.
+									In this example, the value <span class="InlineCode">"one"</span> is stored in object key <span class="InlineCode">1</span> (aka index 1), and the value <span class="InlineCode">17</span> is stored in object key <span class="InlineCode">4</span> (aka index 4).
+								</div>
+							</li>
+							<li><span class="InlineCode" >Banana := {"Shape": "Elongated", "Color": "Yellow", "Taste": "Delicious", "Price": 3}</span><br />
+								<div class="indented" >
+									Brace syntax.
+									This will let you start of by defining what is sometimes called an "associative array".
+									An associative array is a collection of data where each item has a name.
+									In this example, the value <span class="InlineCode">"yellow"</span> is stored in the object key <span class="InlineCode">"color"</span>. Also, the value <span class="InlineCode">3</span> is stored in the object key <span class="InlineCode">"Price"</span>.
+								</div>
+							</li>
+							<li><span class="InlineCode" >MyObject := Array("one", "two", "three", 17)</span><br />
+								<div class="indented" >
+									The "array" creation function. This is equivalent to the bracket syntax, but wrapped in a function.
+								</div>
+							</li>
+							<li><span class="InlineCode" >Banana := Object("Shape", "Elongated", "Color", "Yellow", "Taste", "Delicious", "Price", 3)</span><br />
+								<div class="indented" >
+									The object creation function. This is equivalent to the brace syntax, but wrapped in a function.
+								</div>
+							</li>
+						</ol>
+						
+						It's important to remember that every one of these definitions all create the same thing (objects), just with different keys.
+						
+					</div>
+
+					<h2>b. <a id="s72" href="#s72">Using Objects</a></h2>
+					There are many ways to use objects, including retrieving values, setting values, adding more values, and more.
+					<div>
+						<br />
+						<strong>To set values:</strong>
+						<div class="indented">
+							Setting values in an object is as simple as setting the value of a variable.<br />
+							All you have to do is put your bracket or dot notation (as seen in the retrieval section) on the left side of an expression assignment symbol <span class="InlineCode" >:=</span>.<br />
+							<br />
+							For example:<br />
+							<span class="InlineCode" >Banana.Consistency := "Mushy"</span><br />
+							<span class="InlineCode" >Banana["Pickled"] := True ; This banana has been pickled. Eww.</span>
+						</div>
+						<br />
+						<strong>To retrieve values:</strong>
+						<ol>
+							<li><span class="InlineCode" >Value := Banana["Color"]</span><br />
+								<div class="indented" >Bracket notation. This allows you to use an expression as the key to get the value from your object.
+									In this case, I used the simple expression <span class="InlineCode">"Color"</span>, which is (unsurprisingly) the key <span class="InlineCode">Color</span>
+									You will get a message box with the word "Yellow", because that is what we set the key <span class="InlineCode">Color</span> to in the <a href="#s71">previous section</a>.
+								</div>
+							</li>
+							<li><span class="InlineCode" >Value := Banana.Color</span><br />
+								<div class="indented" >
+									Dot notation. This only lets you use literal strings for the keys. You cannot use variables in your keys with dot notation.
+								</div>
+							</li>
+						</ol>
+						<br />
+						<strong>To add new keys and values:</strong>
+						<ol>
+							<li>Directly adding values
+								<div class="indented" >
+									To directly add a key and value, just set a key that doesn't exist yet.
+									For example:<br />
+									<span class="InlineCode" >MyObject.NewKey := "Shiny"</span><br />
+									<span class="InlineCode" >MyObject["NewerKey"] := 3.1415</span>
+								</div>
+							</li>
+							<li>Inserting values
+								<div class="indented" >
+									Another way to add keys and values to an object is to use the <span class="InlineCode" >Insert</span> "method".
+									A method is like a function, but it belongs to an object.<br />
+									<br />
+									The insert method can be called in three ways:<br />
+									<br />
+									<span class="InlineCode" >MyObject.Insert(Index, Value1, Value2, Value3...)</span><br />
+									If Index/Key is omitted, it defaults to the highest integer key plus one.<br />
+									<br />
+									<span class="InlineCode" >MyObject.Insert(Value)</span><br />
+									If you specify an integer key, it will shift ALL higher integer keys to the next number up, even if there are gaps (for example, only keys 1 and 100 exist, and you insert a value at key 50, it will shift 100 up to 101)<br />
+									<br />
+									<span class="InlineCode" >MyObject.Insert(Key, Value)</span><br />
+									If you use an integer key, and have multiple values each additional value would be the index of the previous value plus one. It will shift ALL higher integer keys up by the number of values specified, following the same rules as when you only add a single value.
+								</div>
+							</li>
+						</ol>
+						<br />
+						<strong>To remove keys and values:</strong>
+						<ol>
+							<li>Blanking the value out.<br />
+								<div class="indented" >
+									The simplest way to remove a value is to just blank it out. You can do this by setting it to "", also known as an <i>empty string</i>. This doesn't remove the key, but it will make the value appear identical to an unset value.<br />
+									It is possible to tell that the key still exists by using the <span class="InlineCode">HasKey</span> method, and it will still come up in a <span class="InlineCode">for</span> loop. (for loops will be explained later)
+								</div>
+							</li>
+							<li>Removing the key<br />
+								<div class="indented" >
+									Another way to remove both the key <i>and</i> value is to remove the key all together. This is done by calling the <span class="InlineCode" >Remove</span> method. There are a few different ways to use this method, but they all do more or less the same thing.
+								</div>
+								<ol>
+									<li><span class="InlineCode">RemovedValue := MyObject.Remove(AnyKey)</span>
+										<div class="indented">
+											When you use the Remove method like this, it deletes the specified key, and if it's an integer key it then shifts every higher key down by one (similar to how the Insert method shifts keys up by one).<br />
+											<br />
+											The value it gives will be the contents of the key AnyKey
+										</div>
+									</li>
+									<li><span class="InlineCode">NumberOfRemovedKeys := MyObject.Remove(FirstKey, LastKey)</span>
+										<div class="indented">
+											Using the remove method in this way allows you to remove a range of numbered/integer keys between FirstKey and LastKey. After removing the keys it takes all higher numbered/integer keys and moves them down to fill the gap, so that the key just above LastKey is now FirstKey. This is similar to how the Insert method with multiple specified values works.<br />
+											<br />
+											The value it gives will be the number of keys that were removed, which is useful if you have a gap between your keys (eg, you specify keys 1 through four, but key number 2 doesn't exist, this will set NumberOfRemovedKeys to 3 as only three keys were there to be removed)
+										</div>
+									</li>
+									<li><span class="InlineCode">MyObject.Remove()</span>
+										<div class="indented">
+											This removes the highest integer key, and returns the value. There are no keys higher than it to be affected.
+										</div>
+									</li>
+									<li><span class="InlineCode">MyObject.Remove(AnyKey, "")</span>
+										<div class="indented">
+											By using the FirstKey LastKey syntax with "" as the LastKey, you can delete an integer key without having all the other keys shift down one. This can be very helpful if you want to treat your object as an associative array with numeric keys instead of an indexed array.
+										</div>
+									</li>
+								</ol>
+							</li>
+						</ol>
+							<!-- Nested objects:
+		A very notable feature of objects is that their values are not limited to strings and numbers. They can be other objects!
+		Some people refer to this as "Multidimensional arrays"
+		Defining an object with nested objects is the same as normal, but you just use more object definitions instead of strings or numbers.
+		For example, this makes an object with two nested objects, containing lists of adjectives
+		> MyFruits := {"Orange":["Round", "Orange", "Tasty"], "Banana":["Mushy", "Yellow", "Peely"]}
+		
+		A common task people use nested objects for is grids. -->
+					</div>
+
+					<!-- PAGE 7 -->
+					<!-- PAGE 7 -->
+					<!-- PAGE 7 -->
 				</div>
 				<div id="helpful_goodies" class="section">
-					<h1>7 - <a id="s7" href="#s7">Other</a> helpful goodies</h1>
+					<h1>8 - <a id="s8" href="#s8">Other</a> helpful goodies</h1>
 					<p>
 						We have reached the end of our journey, my good friend. I hope you have learned something.
 						But before we go, here are some other things that I think you should know. Enjoy!
 					</p>
-					<h2>a. <a id="s71" href="#s71">The mysterious []'s</a></h2>
+					<h2>a. <a id="s81" href="#s81">The mysterious []'s</a></h2>
 					<div>
 						Throughout the documentation, you will see these two symbols (<b>[</b> and <b>]</b>) surrounding code in the yellow syntax box at the top of almost all pages. Anything inside of these brackets are <b><i>OPTIONAL</i></b>. Meaning the stuff inside can be left out if you don't need them. When writing your code, it is very important to <b>NOT</b> type the []'s in your code.<br /><br />
 						On the <a href="http://www.autohotkey.com/docs/commands/ControlGetText.htm" class="url">ControlGetText</a> page you will see this (without the colors):<br />
@@ -919,7 +1098,7 @@ If Var1 &lt; %Var2%                   ; Without parenthesis, the if is Tradition
 							<span class="InlineCode">ControlGetText, OutputVar, Control,,, ExcludeTitle</span>
 						</p>
 					</div>
-					<h2>b. <a id="s72" href="#s72">Finding your AHK version</a></h2>
+					<h2>b. <a id="s82" href="#s82">Finding your AHK version</a></h2>
 					<div>
 						Run this code to see your AHK version:
 <pre class="MultiCode">
@@ -929,7 +1108,7 @@ MsgBox, %A_AHKVersion%
 						Or look for "AutoHotkey Help File" or "AutoHotkey.chm" in the start menu or your installation directory.
 					</div>
 
-					<h2>c. <a id="s73" href="#s73">Trial and Error</a></h2>
+					<h2>c. <a id="s83" href="#s83">Trial and Error</a></h2>
 					<p>
 						Trial and Error is a very common and effective way of learning. Instead of asking for help on every little thing, sometimes spending some time alone (sometimes hours or days) and trying to get something to work will help you learn faster.
 					</p>
@@ -942,7 +1121,7 @@ MsgBox, %A_AHKVersion%
 						Learning takes time, the "pros" you encounter did not learn to be masters in just a few hours or days.
 					</p>
 					<p class="Note">"If at first you don't succeed, try, try, try again." - Hickson, William E.</p>
-					<h2>d. <a id="s74" href="#s74">Indentation</a></h2>
+					<h2>d. <a id="s84" href="#s84">Indentation</a></h2>
 					<div>
 						This stuff (indentation) is very important! Your code will run perfectly fine without it, but it will be a major headache for you and other to read your code. Small code (25 lines or less) will probably be fine to read without indentation, but it'll soon get sloppy. It's best you learn to indent ASAP.<br />
 						Indentation has no set style, but it's best to keep everything consistent.<br />
@@ -994,7 +1173,7 @@ else
 						<a href="http://en.wikipedia.org/wiki/Indent_style" class="url">http://en.wikipedia.org/wiki/Indent_style</a>
 					</div>
 
-					<h2>e. <a id="s75" href="#s75">Asking for Help</a></h2>
+					<h2>e. <a id="s85" href="#s85">Asking for Help</a></h2>
 					Before you ask, try doing some research yourself or try to code it yourself. If that did not yield results that satisfy you, read below.
 					<ul>
 						<li>Don't be afraid to ask for help, even the smartest people ask others for help.</li>
@@ -1011,7 +1190,7 @@ else
 					If you don't get an answer right away, wait atleast 1 day (24 hours) before asking for more help. We love to help, but we also do this for free on our own time. We might be at work, sleeping, gaming, with family or just too busy to help.<br />
 					And while you wait for help, you can try learning and doing it yourself. It's a good feeling, making something yourself without help.
 
-					<h2>f. <a id="s76" href="#s76">Other links</a></h2>
+					<h2>f. <a id="s86" href="#s86">Other links</a></h2>
 					<p>
 						<a href="http://www.autohotkey.com/docs/FAQ.htm" class="url">Frequently Asked Questions (FAQ)</a>
 					</p>
@@ -1020,3 +1199,5 @@ else
 		</div>
 	</body>
 </html>
+
+
